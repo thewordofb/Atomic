@@ -1,0 +1,41 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChemistryApp.Common">
+    
+    <DataTemplate x:Key="NoUnitTemplate">
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="CelsiusUnitTemplate">
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="AngstromUnitTemplate">
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="CubicCentimeterPerMoleUnitTemplate">
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="GramsPerLiterUnitTemplate">
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="PaulingUnitTemplate">
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="JoulesPerKelvinUnitTemplate">
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="KiloJoulesPerMoleUnitTemplate">
+    </DataTemplate>
+    
+    <DataTemplate x:Key="WattsPerMeterKelvinUnitTemplate">
+        
+    </DataTemplate>
+    
+</ResourceDictionary>

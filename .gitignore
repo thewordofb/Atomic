@@ -118,6 +118,8 @@ ipch/
 
 # TFS 2012 Local Workspace
 $tf/
+BuildProcessTemplates/
+Atomic/atomic/Atomic.App/Advertising
 
 # Guidance Automation Toolkit
 *.gpState

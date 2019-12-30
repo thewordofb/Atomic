@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{515BB452-7B31-4F81-BEF3-93FE340B7CFB}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Atomic.App</RootNamespace>
+    <AssemblyName>Atomic.App</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>Atomic.App_StoreKey.pfx</PackageCertificateKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PackageCertificateThumbprint>75C94BA8387F34A1B5150EE721097BFEB78AB870</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Balance\Element.cs" />
+    <Compile Include="Model\Balance\Molecule.cs" />
+    <Compile Include="Model\PeriodicTable\ElementProperty.cs" />
+    <Compile Include="Model\PeriodicTable\Elements.cs" />
+    <Compile Include="Model\Balance\Formula.cs" />
+    <Compile Include="Model\Balance\FormulaBalancer.cs" />
+    <Compile Include="Model\PeriodicTable\PeriodicTable.cs" />
+    <Compile Include="Model\PeriodicTable\Units.cs" />
+    <Compile Include="Pages\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Controls\FormulaControl.xaml.cs">
+      <DependentUpon>FormulaControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EmpiricalFormulaPage.xaml.cs">
+      <DependentUpon>EmpiricalFormulaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FormulaBalancerPage.xaml.cs">
+      <DependentUpon>FormulaBalancerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IdealGasPage.xaml.cs">
+      <DependentUpon>IdealGasPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LimitingReagentPage.xaml.cs">
+      <DependentUpon>LimitingReagentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MolarMassPage.xaml.cs">
+      <DependentUpon>MolarMassPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PeriodicTablePage.xaml.cs">
+      <DependentUpon>PeriodicTablePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PeriodicTableView.xaml.cs" />
+    <Compile Include="Pages\StoichiometryPage.xaml.cs">
+      <DependentUpon>StoichiometryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Atomic.App_StoreKey.pfx" />
+    <None Include="Atomic.App_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AppList\AppList.scale-100.png" />
+    <Content Include="Assets\AppList\AppList.scale-125.png" />
+    <Content Include="Assets\AppList\AppList.scale-150.png" />
+    <Content Include="Assets\AppList\AppList.scale-200.png" />
+    <Content Include="Assets\AppList\AppList.scale-400.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-16.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-16_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-20.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-20_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-24.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-256.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-256_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-30.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-30_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-32.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-32_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-36.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-36_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-40.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-40_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-48.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-48_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-60.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-60_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-64.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-64_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-72.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-72_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-80.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-80_altform-unplated.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-96.png" />
+    <Content Include="Assets\AppList\AppList.targetsize-96_altform-unplated.png" />
+    <Content Include="Assets\Large\Large310x310Logo.scale-100.png" />
+    <Content Include="Assets\Large\Large310x310Logo.scale-125.png" />
+    <Content Include="Assets\Large\Large310x310Logo.scale-150.png" />
+    <Content Include="Assets\Large\Large310x310Logo.scale-200.png" />
+    <Content Include="Assets\Large\Large310x310Logo.scale-400.png" />
+    <Content Include="Assets\Medium\Medium150x150Logo.scale-100.png" />
+    <Content Include="Assets\Medium\Medium150x150Logo.scale-125.png" />
+    <Content Include="Assets\Medium\Medium150x150Logo.scale-150.png" />
+    <Content Include="Assets\Medium\Medium150x150Logo.scale-200.png" />
+    <Content Include="Assets\Medium\Medium150x150Logo.scale-400.png" />
+    <Content Include="Assets\science.svg" />
+    <Content Include="Assets\Small\Small71x71Logo.scale-100.png" />
+    <Content Include="Assets\Small\Small71x71Logo.scale-125.png" />
+    <Content Include="Assets\Small\Small71x71Logo.scale-150.png" />
+    <Content Include="Assets\Small\Small71x71Logo.scale-200.png" />
+    <Content Include="Assets\Small\Small71x71Logo.scale-400.png" />
+    <Content Include="Assets\SplashScreen\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Store\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Store\StoreLogo.scale-125.png" />
+    <Content Include="Assets\Store\StoreLogo.scale-150.png" />
+    <Content Include="Assets\Store\StoreLogo.scale-200.png" />
+    <Content Include="Assets\Store\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Wide\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\Wide\Wide310x150Logo.scale-400.png" />
+    <EmbeddedResource Include="XML\Elements.xml" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="BrushDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Controls\FormulaControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EmpiricalFormulaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FormulaBalancerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\IdealGasPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LimitingReagentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MolarMassPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PeriodicTablePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PeriodicTableView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\StoichiometryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UnitDataTemplates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics">
+      <Version>3.20.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>5.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>2.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.4.0-preview1-25305-02</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.Advertising.Xaml, Version=10.0">
+      <Name>Microsoft Advertising SDK for XAML</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.Services.Store.Engagement, Version=10.0">
+      <Name>Microsoft Engagement Framework</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

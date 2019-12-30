@@ -1,0 +1,42 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <DataTemplate x:Key="NoUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="CelsiusUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="°C" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="AngstromUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="Å" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="CubicCentimeterPerMoleUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke">cm<Run Typography.Variants="Superscript">3</Run>/mol
+        </TextBlock>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="GramsPerLiterUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="g/L" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="PaulingUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="P" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="JoulesPerKelvinUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="J" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="KiloJoulesPerMoleUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="kJ/mol" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="WattsPerMeterKelvinUnitTemplate">
+        <TextBlock Foreground="WhiteSmoke" Text="W/m·K" />
+    </DataTemplate>
+    
+</ResourceDictionary>

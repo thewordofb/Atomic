@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atomic.App", "Atomic.App\Atomic.App.csproj", "{515BB452-7B31-4F81-BEF3-93FE340B7CFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|ARM.Build.0 = Debug|ARM
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|ARM.Deploy.0 = Debug|ARM
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|x64.ActiveCfg = Debug|x64
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|x64.Build.0 = Debug|x64
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|x64.Deploy.0 = Debug|x64
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|x86.ActiveCfg = Debug|x86
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|x86.Build.0 = Debug|x86
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Debug|x86.Deploy.0 = Debug|x86
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|Any CPU.ActiveCfg = Release|x86
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|ARM.ActiveCfg = Release|ARM
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|ARM.Build.0 = Release|ARM
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|ARM.Deploy.0 = Release|ARM
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|x64.ActiveCfg = Release|x64
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|x64.Build.0 = Release|x64
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|x64.Deploy.0 = Release|x64
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|x86.ActiveCfg = Release|x86
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|x86.Build.0 = Release|x86
+		{515BB452-7B31-4F81-BEF3-93FE340B7CFB}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://metrofoundry.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Atomic.App\\Atomic.App.csproj
+		SccProjectName1 = Atomic.App
+		SccLocalPath1 = Atomic.App
+	EndGlobalSection
+EndGlobal

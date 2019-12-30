@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Atomic.App.Pages.StoichiometryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Atomic.App.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Stoichiometry" Margin="40,20,40,0" Style="{ThemeResource SubheaderTextBlockStyle}" />
+
+        <Grid Grid.Row="1" Margin="40,10,40,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+    </Grid>
+</Page>
